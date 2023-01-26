@@ -1,8 +1,7 @@
 package com.bookTrader.security.repository;
 
-import com.bookTrader.security.model.entities.Rol;
 import com.bookTrader.security.model.entities.User;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.PagingAndSortingRepository;
 
-public interface UserRepository extends CrudRepository<User,Long> {
+public interface UserRepository extends PagingAndSortingRepository<User,Long> {
 }

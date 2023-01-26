@@ -2,11 +2,11 @@ package com.bookTrader.security.service.interfaces;
 
 
 import com.bookTrader.security.model.entities.User;
-
-import java.util.List;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 public interface IUserService {
 
-    public List<User> findAll();
+    Page<User> findAll(Pageable page);
 
 }
