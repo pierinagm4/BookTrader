@@ -15,7 +15,7 @@ public class RolService implements IRolService {
     RolRepository rolRepo;
 
     @Override
-    public List<Rol> findAllRoles() {
+    public List<Rol> findAll() {
         return (List<Rol>) rolRepo.findAll();
     }
 }

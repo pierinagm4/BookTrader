@@ -28,8 +28,8 @@ public class User {
     @Column(name="user_user")
     private String user;
 
-    @Column(name="password")
-    private String user_password;
+    @Column(name="user_password")
+    private String password;
 
     @OneToOne
     @JoinColumn(name= "state_id", referencedColumnName= "state_id")

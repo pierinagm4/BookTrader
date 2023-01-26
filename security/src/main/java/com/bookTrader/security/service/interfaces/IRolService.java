@@ -6,6 +6,6 @@ import java.util.List;
 
 public interface IRolService {
 
-    public List<Rol> findAllRoles();
+    public List<Rol> findAll();
 
 }
