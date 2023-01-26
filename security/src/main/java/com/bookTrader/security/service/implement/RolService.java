@@ -4,6 +4,8 @@ import com.bookTrader.security.model.entities.Rol;
 import com.bookTrader.security.repository.RolRepository;
 import com.bookTrader.security.service.interfaces.IRolService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -15,7 +17,7 @@ public class RolService implements IRolService {
     RolRepository rolRepo;
 
     @Override
-    public List<Rol> findAll() {
-        return (List<Rol>) rolRepo.findAll();
+    public Page<Rol> findAll(Pageable page) {
+        return (Page<Rol>) rolRepo.findAll(page);
     }
 }

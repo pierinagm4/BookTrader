@@ -12,7 +12,7 @@ public class Rol {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="rol_id")
-    private Long idRol;
+    private Long id;
 
     @OneToOne
     @JoinColumn(name= "state_id", referencedColumnName= "state_id")

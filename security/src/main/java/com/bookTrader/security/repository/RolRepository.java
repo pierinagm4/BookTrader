@@ -1,10 +1,13 @@
 package com.bookTrader.security.repository;
 
+import org.springframework.data.domain.Pageable;
 import com.bookTrader.security.model.entities.Rol;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.PagingAndSortingRepository;
 
-public interface RolRepository extends CrudRepository <Rol,Long>{
+import java.util.List;
 
+public interface RolRepository extends PagingAndSortingRepository<Rol,Long> {
 
+    List<Rol> findAllByName(String name, Pageable pageable);
 
 }
